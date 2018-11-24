@@ -3,6 +3,7 @@ import { Router, Scene } from 'react-native-router-flux';
 import { StatusBar, View, Platform, NativeModules } from 'react-native'
 import CardStackStyleInterpolator from 'react-navigation-stack/dist/views/StackView/StackViewStyleInterpolator';
 import FormChamada from './components/FormChamada';
+import FormLogin from './components/FormLogin';
 
 const { StatusBarManager } = NativeModules;
 const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : StatusBarManager.HEIGHT;
@@ -30,12 +31,7 @@ export default props => (
                 }
             })}>
                 <Scene key="formChamada" component={FormChamada}  title="Chamada" />
-                {/* <Scene key="formCadastro" component={FormCadastro} style={{paddingTop:30}} title="Cadastro"/>
-                <Scene key="boasVindas" component={BoasVindas} hideNavBar title="Bem Vindo" />
-                <Scene key='principal' component={Principal} hideNavBar title="Principal" direction="vertical"/>
-                <Scene key='adicionarContato' component={AdicionarContato} back title="Adicionar Contato" />
-                <Scene key='conversa' component={Conversa} title="Conversa" />
-                <Scene key='loginv2' component={FormLogin2} hideNavBar title="Bem Vindo" /> */}
+                <Scene key="formLogin" component={FormLogin} initial title="Login" />
             </Scene>
         </Router>
     </View>

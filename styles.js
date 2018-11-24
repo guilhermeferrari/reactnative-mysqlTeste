@@ -58,5 +58,34 @@ export const styles = StyleSheet.create({
 
   botaoView: {
     marginBottom: 30,
+  },
+  loginView: {
+    flex: 1,
+    justifyContent: 'center'
+  },
+  loginCamposView: {
+    backgroundColor:'white',
+    height: 300,
+    marginLeft: 10,
+    paddingLeft: 10,
+    marginRight: 10,
+    paddingRight: 10,
+    borderRadius: 14,
+    justifyContent: 'center'
+  },
+  labelLogin:{
+    fontSize: 25,
+  },
+  inputLogin:{
+    fontSize: 20,
+  },
+  emailView: {
+    paddingLeft: 10,
+    marginBottom: 10,
+  },
+  senhaView: {
+    paddingLeft: 10,
+    marginBottom: 10,
   }
+  
 });
