@@ -1,0 +1,3 @@
+rootProject.name = 'mysqlTeste'
+
+include ':app'
